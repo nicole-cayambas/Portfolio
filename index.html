@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikol Codes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-head" id="header">
@@ -26,7 +29,7 @@
                 Hire me
                 </button>           
                 <div class="contentText">
-                    <p>Freelance front-end web developer. <br>
+                    <p>Fullstack web developer. <br>
                         Based in Baguio City, Philippines.</p>
                 </div>
             </div>
@@ -36,13 +39,23 @@
                 <a href="https://www.linkedin.com/in/nicole-cayambas/"><img src="images/linkedin.svg" alt="LinkedIn" width="27px" height="27px"></a>
                 <a href="https://www.instagram.com/nekolikol.draws/"><img src="images/instagram.svg" alt="Instagram" width="23px" height="23px"></a>
             </div>
+            <br>
+            <div class="arrow-down">
+                <a href="#works"><img src="images/arrow.svg" alt="see more" height="54px"></a>
+            </div>
         </div>
-        <div class="mainPic">
-
+        <div id="scribbles">
+            <div class="scribble"><p>I use Laravel</p></div>
+            <div class="scribble"><p>I'm learning React</p></div>
+            <div class="scribble"><p>I use VSCode</p></div>
+            <div class="scribble"><p>I enjoy Kotlin</p></div>
+            <div class="scribble"><p>I play with TailwindCSS</p></div>
+            <div class="scribble"><p>I appreciate Python</p></div>
+            <div class="scribble"><p>I want to learn Solidity</p></div>
+            <div class="scribble"><p>I use MySQL</p></div>
+            <div class="scribble"><p>I love Javascript</p></div>
         </div>
-        <div class="arrow-down">
-            <a href="#works"><img src="images/arrow.svg" alt="see more" height="54px"></a>
-        </div>
+        
     </section>
     
     <section id="works">
@@ -51,18 +64,11 @@
             <a href="http://plantinda.com/" class="work-card" style="background-image: url(images/plantinda-home.png);"></a>
             <a href="https://cit14project.github.io/ArtShop/" class="work-card" style="background-image: url(images/artshop.png);"></a>
             <a href="https://nicole-cayambas.github.io/product-landing-page/" class="work-card" style="background-image: url(images/product-landing-page.png);"></a>
-            <!-- <div class="work-card"></div>
-            <div class="work-card"></div>
-            <div class="work-card"></div> -->
+            <a href="https://nicole-cayambas.github.io/TributePage/" class="work-card" style="background-image: url(images/tribute-page.png);"></a>
+            <a href="https://youtu.be/6YhZW-pxtXQ" class="work-card" style="background-image: url(images/SafeMe.png);"></a>
+            <a href="https://youtu.be/WzZYcrlhB_U" class="work-card" style="background-image: url(images/getgo.png);"></a>
         </div>
         <br>
-        <span>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="33" viewBox="0 0 59.114 37.114">
-                    <path fill="none" stroke="rgb(128,128,128)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3" d="M7.05694516 7.05694516l23 23 22-23"/>
-                </svg>
-            </a>
-        </span>
         <div class="arrow-down">
             <a href="#contact"><img src="images/arrow.svg" alt="see more" height="54px"></a>
         </div>
@@ -70,20 +76,33 @@
 
     
     <section id="contact">
-        <div id="what-i-do">
-            <h3><strong> WHAT_I_DO </strong></h3>
+        <div id="about">
+            <h3><strong> ABOUT </strong></h3> 
             <div>
-                <p>
-                    I am a freelance front-end web developer. I specialize in creating clean, responsive, and fast websites.
-                </p>
+                <p><strong> Education </strong></p>
+                <p> University of the Cordilleras <br> Baguio City, Philippines <br> BS in Information Technology</p>
             </div>
+            <br>
             <div>
-                <p>
-                    I am available for freelance projects.
-                </p>
+                <p><strong> Certificates/Achievements </strong></p>
+                <p> Academic Scholar -  <br> Commission on Higher Education (CHED) </p>
+                <br>
+                <p> Introduction to Web Development Bootcamp -  <br> CFG London </p>
+            </div>
+            <br>
+            <div>
+                <p><strong> Interests </strong></p>
+                <p> Blockchain </p>
+                <p> Sudoku </p>
+                <p> Fiction and Nonfiction </p>
+            </div>
+            <br>
+            <div>
+                <p> <a href="https://drive.google.com/file/d/1KfTf3zpsQGqxkFKteSTBISE8u3mNXOs4/view?usp=sharing" id="resume"> Resume </a> </p>
             </div>
         </div>
         <div>
+            <h3><strong> CONTACT </strong></h3> <br>
             <form action="">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
@@ -97,6 +116,13 @@
             </form>
         </div>
     </section>
+
+    <footer>
+        <div>
+            <p>NIKOL_CODES by Nicole S. Cayambas</p>
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+        </div>
+    </footer>
 
     <script src="app.js"></script>
 
