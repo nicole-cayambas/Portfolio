@@ -1,0 +1,255 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #A4A4A4;
+}
+li, input, label, p {
+    font-size: 2rem;
+}
+h1 {
+    font-size: 7.2rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* NAV SECTION WITH HEADER */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform .2s;
+}
+nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    transition: transform .2s;
+}
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+#logo {
+    flex: 2;
+}
+
+
+
+
+/* HOME */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20rem 0 20rem 10rem;
+    margin: auto;
+}
+.titleAndContent {
+    width: 50vw;
+    /* flex: 1; */
+}
+#title {
+    font-weight: normal;
+    font-size: 6vw;
+}
+.contentDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 25px 0;
+}
+#hireBtn {
+    min-height: 55px;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 2.7rem;
+    font-size: 1.5vw;
+    flex: 1;
+    transition: transform .2s;
+    cursor: pointer;
+}
+#hireBtn:hover {
+    transform: scale(1.1);
+}
+.contentText {
+    text-align: end;
+    flex: 2;
+}
+.contentText p{
+    font-size: 1.6vw;
+}
+.contactDiv {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contactDiv img {
+    margin-left: 40px;
+    transition: transform .2s;
+}
+.contactDiv img:hover {
+    transform: scale(1.3);
+}
+.mainPic {
+    flex: 1;
+}
+
+
+
+.arrow-down {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    /* position: absolute; */
+    /* bottom: 5vh;
+    left: 5vw; */
+    transition: transform .2s;
+}
+.arrow-down:hover {
+    transform: scale(1.3);
+}
+
+
+section {
+    height: 100vh;
+}
+
+#works, #contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 7rem 0 7rem;
+}
+
+#works .arrow-down {
+    align-self: flex-start;
+}
+
+#works h3 {
+    text-align: center;
+}
+
+#work-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    /* flex-wrap: wrap; */
+    /* margin: auto; */
+    width: 100%;
+    gap: 5rem;
+}
+
+.work-card {
+    flex: 1;
+    height: 350px;
+    width: 350px;
+    background-color: #C8C8C8;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 8px rgb(0, 0, 0, .24));
+    transition: transform .2s;
+    background-position: left; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.work-card:hover {
+    transform: scale(1.1);
+}
+
+/* .work-card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+} */
+
+
+#contact {
+    flex-direction: row;
+}
+
+#contact > div, #contact form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contact form {
+    width: 80%;
+}
+
+#contact form > input, #contact form > textarea {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    padding: 0 10px;
+    background-color: #C8C8C8;
+}
+
+#contact form > textarea {
+    height: 150px;
+    padding: 10px;
+}
+
+#contact form > label {
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact form > button {
+    width: 100%;
+    height: 50px;
+    background-color: #393939;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#what-i-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#what-i-do > div {
+    background-color: #393939;
+    flex: 1;
+}

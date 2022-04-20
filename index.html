@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikol Codes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-head" id="header">
+        <nav>
+            <h3 id="logo">NIKOL_CODES</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="titleAndContent">
+            <h1 id="title">THIS IS<br><strong>NIKOL_CODES</strong></h1>
+            <div class="contentDiv">
+                <button id="hireBtn" onclick="window.location='#contact'">
+                Hire me
+                </button>           
+                <div class="contentText">
+                    <p>Freelance front-end web developer. <br>
+                        Based in Baguio City, Philippines.</p>
+                </div>
+            </div>
+            <div class="contactDiv">
+                <a href="https://twitter.com/nikol_codes"><img src="images/twitter.svg" alt="Twitter" width="26px" height="26px"></a>
+                <a href="mailto:nicolescayambas@gmail.com"><img src="images/email.svg" alt="Email" width="29px" height="29px"></a>
+                <a href="https://www.linkedin.com/in/nicole-cayambas/"><img src="images/linkedin.svg" alt="LinkedIn" width="27px" height="27px"></a>
+                <a href="https://www.instagram.com/nekolikol.draws/"><img src="images/instagram.svg" alt="Instagram" width="23px" height="23px"></a>
+            </div>
+        </div>
+        <div class="mainPic">
+
+        </div>
+        <div class="arrow-down">
+            <a href="#works"><img src="images/arrow.svg" alt="see more" height="54px"></a>
+        </div>
+    </section>
+    
+    <section id="works">
+        <h3><strong> MY_WORKS </strong></h3> <br>
+        <div id="work-cards-container">
+            <a href="http://plantinda.com/" class="work-card" style="background-image: url(images/plantinda-home.png);"></a>
+            <a href="https://cit14project.github.io/ArtShop/" class="work-card" style="background-image: url(images/artshop.png);"></a>
+            <a href="https://nicole-cayambas.github.io/product-landing-page/" class="work-card" style="background-image: url(images/product-landing-page.png);"></a>
+            <!-- <div class="work-card"></div>
+            <div class="work-card"></div>
+            <div class="work-card"></div> -->
+        </div>
+        <br>
+        <span>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="33" viewBox="0 0 59.114 37.114">
+                    <path fill="none" stroke="rgb(128,128,128)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="3" d="M7.05694516 7.05694516l23 23 22-23"/>
+                </svg>
+            </a>
+        </span>
+        <div class="arrow-down">
+            <a href="#contact"><img src="images/arrow.svg" alt="see more" height="54px"></a>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <div id="what-i-do">
+            <h3><strong> WHAT_I_DO </strong></h3>
+            <div>
+                <p>
+                    I am a freelance front-end web developer. I specialize in creating clean, responsive, and fast websites.
+                </p>
+            </div>
+            <div>
+                <p>
+                    I am available for freelance projects.
+                </p>
+            </div>
+        </div>
+        <div>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="text" id="email" id="email">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" id="subject">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
