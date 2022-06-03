@@ -1,7 +1,3 @@
-function hire(){
-    let hireBtn = document.getElementById("hireBtn")
-    console.log("hire clicked!");
-}
 function changeColor(){
     let arrowDownLink = document.getElementById("arrow-down-a")
     arrowDownLink.style.color = "rgb("
@@ -11,6 +7,17 @@ function changeColor(){
     + ","
     + Math.floor(Math.random()*255)
     + ")"
+}
+
+function sendMail(){
+    var link = "mailto:nicolescayambas@gmail.com"
+                + "?subject=" + encodeURIComponent(document.getElementById('subject').value)
+                + "&body=" + encodeURIComponent(
+                    document.getElementById('message').value + ""
+                    )
+
+    window.location.href = link
+    
 }
 
 const header = document.getElementById("header")

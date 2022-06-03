@@ -100,21 +100,17 @@
             </div>
             <br>
             <div>
-                <p> <a href="https://drive.google.com/file/d/1KfTf3zpsQGqxkFKteSTBISE8u3mNXOs4/view?usp=sharing" id="resume"> Resume </a> </p>
+                <p> <a href="https://docs.google.com/document/d/1Y11L2irVqQe0V_Pe5Czj8StwmNe1h4i03XlXqTDQSVg/edit?usp=sharing" id="resume"> Resume </a> </p>
             </div>
         </div>
         <div>
             <h3><strong> CONTACT </strong></h3> <br>
             <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email</label>
-                <input type="text" id="email" id="email">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject" id="subject">
+                <input type="text" id="subject" name="subject" required>
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <button type="submit">Submit</button>
+                <textarea name="message" id="message" required></textarea>
+                <button onclick="sendMail()" type="submit">Submit</button>
             </form>
         </div>
     </section>
@@ -126,6 +122,7 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="app.js"></script>
 
 </body>
